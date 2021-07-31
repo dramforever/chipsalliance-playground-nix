@@ -1,8 +1,8 @@
 {
-  description = "Playground";
+  description = "chipsalliance-playground-nix as a nix flake";
 
   inputs.flake-utils.url = "github:numtide/flake-utils";
-  
+
   inputs.nixpkgs = {
     url = "github:NixOS/nixpkgs/nixos-unstable";
     flake = false;
