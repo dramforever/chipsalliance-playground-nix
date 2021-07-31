@@ -1,8 +1,5 @@
 { pkgs ? import <nixpkgs> {
-    crossSystem = {
-      config = "riscv64-none";
-      libc = "newlib";
-    };
+    crossSystem.config = "riscv64-unknown-linux-gnu";
   }
 }:
 
