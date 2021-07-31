@@ -13,7 +13,7 @@
       [ "i686-linux" "x86_64-linux" "aarch64-linux" "aarch64-darwin"  ]
       (system: {
         legacyPackages = import nixpkgs {
-          system = "${system}";
+          inherit system;
           crossSystem.config = "riscv64-unknown-linux-gnu";
         };
 
